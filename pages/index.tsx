@@ -1,12 +1,11 @@
-import Sidebar from "../components/sidebar/Sidebar"
-import React from "react"
 import withData from '../lib/apollo'
+import withSidebar from "../layouts/withSidebar"
 
 
 const Index = () => (
   <div>
-    <Sidebar/>
+    {/*<p>welcome to the epic handbook</p>*/}
   </div>
 );
 
-export default withData(Index);
+export default withData(withSidebar(Index));

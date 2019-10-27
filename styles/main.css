@@ -1,5 +1,208 @@
+/*noinspection CssInvalidAtRule*/
 @tailwind base;
+
+/*noinspection CssInvalidAtRule*/
 
 @tailwind components;
 
+/*noinspection CssInvalidAtRule*/
 @tailwind utilities;
+
+.page-title {
+  font-size: 2.5rem;
+}
+
+p {
+  @apply my-2
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  @apply text-gray-900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+  @apply my-2;
+  @apply pt-1;
+}
+
+h1 {
+  @apply text-h1;
+}
+
+h2 {
+  @apply text-h2;
+}
+
+h3 {
+  @apply text-h3;
+}
+
+h4 {
+  @apply text-h4;
+}
+
+h5 {
+  @apply text-h5;
+}
+
+h6 {
+  @apply text-h6;
+}
+
+:not(pre) > code {
+  @apply font-mono;
+  @apply rounded;
+  @apply bg-gray-200 !important;
+  @apply text-red-500;
+  padding: 0 4px;
+}
+
+pre > code {
+  /*@apply bg-transparent;*/
+  @apply text-gray-900;
+  @apply rounded !important;
+  @apply whitespace-pre !important;
+}
+
+pre {
+  padding: 30px 16px 30px 20px !important;
+  @apply bg-gray-100 !important;
+  @apply rounded;
+}
+
+
+ul, ol {
+  /*@apply list-inside;*/
+  @apply pl-6;
+  @apply my-2
+}
+
+li {
+  @apply my-2
+}
+
+ul {
+  @apply list-disc;
+}
+
+ol {
+  @apply list-decimal;
+}
+
+
+table {
+  @apply border-collapse;
+  @apply w-full;
+  @apply border;
+  @apply rounded;
+  @apply my-2
+}
+
+tr:nth-child(even) {
+  @apply bg-gray-100;
+}
+
+tr:hover {
+  @apply bg-gray-200;
+}
+
+th {
+  @apply bg-gray-200
+}
+
+th, td {
+  @apply text-left;
+  @apply p-2;
+  @apply border;
+
+}
+
+.footnotes-sep {
+  @apply mt-16;
+}
+
+.success {
+  @apply p-4;
+  @apply bg-green-200;
+  @apply my-2;
+  @apply rounded;
+}
+
+.warning {
+  @apply p-4;
+  @apply bg-orange-200;
+  @apply my-2;
+  @apply rounded;
+}
+
+.error {
+  @apply p-4;
+  @apply bg-red-200;
+  @apply my-2;
+  @apply rounded;
+}
+
+mark {
+  @apply bg-yellow-400;
+}
+
+a {
+  @apply fill-current;
+  @apply text-blue-500;
+}
+
+a:hover {
+  @apply text-blue-600;
+  @apply underline;
+}
+
+dl {
+  @apply p-4;
+  @apply bg-gray-200;
+}
+
+dl > dt {
+  @apply font-bold;
+  @apply text-h6;
+  @apply text-gray-900;
+}
+
+dl > dd {
+  @apply text-gray-900;
+  @apply ml-4;
+}
+
+/*abbr {*/
+/*  @apply relative;*/
+/*  @apply z-0;*/
+/*}*/
+
+/*abbr:hover::after {*/
+/*  content: attr(title);*/
+/*  position: absolute;*/
+/*  width: 300px;*/
+/*  left: 50%;*/
+/*  display: block;*/
+/*  background: white;*/
+/*  border-radius: 20px;*/
+/*  @apply rounded;*/
+/*  @apply p-2;*/
+/*  @apply shadow-g;*/
+/*}*/
+
+/*a:after {*/
+/*  content: "";*/
+/*  display: inline-block;*/
+/*  background: url("/external-link.svg") no-repeat;*/
+/*  background-size: cover;*/
+/*  width: 16px;*/
+/*  height: 16px;*/
+/*  max-width: available;*/
+/*  max-height: available;*/
+/*  margin: 0 0 0 6px;*/
+
+/*  @apply text-blue-500;*/
+/*  @apply fill-current;*/
+/*}*/
+

@@ -5,7 +5,7 @@ import { HttpLink } from 'apollo-link-http'
 const config = {
   link: new HttpLink({
     credentials: 'same-origin', // Additional fetch() options like `credentials` or `headers`
-    uri: 'http://127.0.0.1:8000/graphql', // Server URL
+    uri: 'http://192.168.1.27/graphql', // Server URL
   })
 }
 

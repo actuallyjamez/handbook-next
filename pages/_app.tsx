@@ -2,6 +2,7 @@ import React from 'react'
 import App from 'next/app'
 
 import '../styles/main.css'
+import '../styles/prism.css'
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for
